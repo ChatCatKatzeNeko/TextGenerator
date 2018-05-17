@@ -14,3 +14,8 @@ I did not pay much attention to the hyperparameter tuning, the idea was to get m
 In order to get a reasonable generated text, I will need to train the model over night with a total epochs number of order 1000 
 or even more and feed it with more training text, say the whole series of The Lord Of The Rings. 
 For further improvement, I may add a dropout layer or use GRU cells instead of LSTM cells.
+
+
+#### NEW:
+I added an other version of text generator using 2 layers of GRU cells and dropout layers, indeed this make the computation 
+faster and achieve a better result even the model was not sufficiently trained. However in this new version I used the tensorflow.contrib.rnn library to do the work.
